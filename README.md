@@ -1,4 +1,4 @@
-# ChatGPT Plus Checkout Generator - Premium Dashboard
+# ChatGPT Plus Checkout Generator
 
 An elegant, high-performance web application designed to generate official Stripe payment/checkout links for ChatGPT Plus. Equipped with proxy settings to bypass IP limitations, statistics tracking, and Vercel KV-backed visitor logs.
 
