@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Plus Checkout Generator - Premium Link Creator</title>
+    <meta name="description" content="Easily generate official ChatGPT Plus Stripe payment links with a 1-month free coupon. Secure, fast, and reliable.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-glow">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+    
+    <main class="container">
+        <!-- Theme Switcher -->
+        <div class="theme-switcher-wrapper">
+            <div class="theme-switcher" role="radiogroup" aria-label="Select Page Theme">
+                <button type="button" class="theme-btn" data-theme-val="system" role="radio" aria-checked="false">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    <span>System</span>
+                </button>
+                <button type="button" class="theme-btn" data-theme-val="dark" role="radio" aria-checked="false">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <span>Dark</span>
+                </button>
+                <button type="button" class="theme-btn" data-theme-val="light" role="radio" aria-checked="false">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <span>Light</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="app-layout">
+            <!-- Left Column: Branding, Stats, Visitor Info & Visitor Log -->
+            <div class="panel-left">
+                <div class="card card-sidebar">
+                    <!-- Header -->
+                    <header class="header">
+                        <div class="logo" aria-label="Logo ChatGPT">
+                            <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M37.532 16.87a9.963 9.963 0 0 0-.856-8.184 10.078 10.078 0 0 0-10.855-4.835A9.964 9.964 0 0 0 18.306.5a10.079 10.079 0 0 0-9.614 6.977 9.967 9.967 0 0 0-6.664 4.834 10.08 10.08 0 0 0 1.24 11.817 9.965 9.965 0 0 0 .856 8.185 10.079 10.079 0 0 0 10.855 4.835 9.965 9.965 0 0 0 7.516 3.35 10.078 10.078 0 0 0 9.617-6.981 9.967 9.967 0 0 0 6.663-4.834 10.079 10.079 0 0 0-1.243-11.813ZM22.498 37.886a7.474 7.474 0 0 1-4.799-1.735c.061-.033.168-.091.237-.134l7.964-4.6a1.294 1.294 0 0 0 .655-1.134V19.054l3.366 1.944a.12.12 0 0 1 .066.092v9.299a7.505 7.505 0 0 1-7.49 7.496ZM6.392 31.006a7.471 7.471 0 0 1-.894-5.023c.06.036.162.099.237.141l7.964 4.6a1.297 1.297 0 0 0 1.308 0l9.724-5.614v3.888a.12.12 0 0 1-.048.103l-8.051 4.649a7.504 7.504 0 0 1-10.24-2.744ZM4.297 13.62a7.469 7.469 0 0 1 3.903-3.287c0 .068-.004.19-.004.274v9.201a1.294 1.294 0 0 0 .654 1.132l9.723 5.614-3.366 1.944a.12.12 0 0 1-.114.012L7.04 23.856a7.504 7.504 0 0 1-2.744-10.237Zm27.658 6.437-9.724-5.615 3.367-1.943a.121.121 0 0 1 .113-.012l8.051 4.649a7.498 7.498 0 0 1-1.158 13.528v-9.476a1.293 1.293 0 0 0-.649-1.131Zm3.35-5.043c-.059-.037-.162-.099-.236-.141l-7.965-4.6a1.298 1.298 0 0 0-1.308 0l-9.723 5.614v-3.888a.12.12 0 0 1 .048-.103l8.05-4.645a7.497 7.497 0 0 1 11.135 7.763Zm-21.063 6.929-3.367-1.944a.12.12 0 0 1-.065-.092v-9.299a7.497 7.497 0 0 1 12.293-5.756 6.94 6.94 0 0 0-.236.134l-7.965 4.6a1.294 1.294 0 0 0-.654 1.132l-.006 11.225Zm1.829-3.943 4.33-2.501 4.332 2.5v5l-4.331 2.5-4.331-2.5V18Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="header-copy">
+                            <h1>Chat GPT Plus Checkout</h1>
+                            <p class="subtitle">Generate Stripe payment link from ChatGPT API</p>
+                            <a href="https://t.me/kk09761" target="_blank" rel="noopener noreferrer" class="telegram-link" id="telegramLink" aria-label="Contact Telegram Support">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                                <span>Contact My Telegram</span>
+                            </a>
+                        </div>
+                    </header>
+
+                    <!-- Realtime Statistics Widget -->
+                    <section class="stats-card" aria-label="Usage Statistics">
+                        <div class="stat-item">
+                            <span class="stat-icon">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                            </span>
+                            <span class="stat-label">Total Links</span>
+                            <span class="stat-value" id="statTotal">0</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-icon">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            </span>
+                            <span class="stat-label">Last Used</span>
+                            <span class="stat-value" id="statLast">Never</span>
+                            <span class="stat-caption" id="statTimeAgo">-</span>
+                        </div>
+                    </section>
+
+                    <!-- User Geolocation details -->
+                    <section class="visitor-card" aria-label="Visitor Information">
+                        <div class="visitor-title">
+                            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            <span>Visitor Details (You)</span>
+                        </div>
+                        <div class="visitor-grid">
+                            <div class="visitor-item">
+                                <span>IP Address:</span>
+                                <span id="visitorIp">Loading...</span>
+                            </div>
+                            <div class="visitor-item">
+                                <span>Country:</span>
+                                <span id="visitorCountry">Loading...</span>
+                            </div>
+                            <div class="visitor-item">
+                                <span>City:</span>
+                                <span id="visitorCity">Loading...</span>
+                            </div>
+                            <div class="visitor-item">
+                                <span>ISP / Organization:</span>
+                                <span id="visitorIsp">Loading...</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Recent Visitors Log Widget (Vercel-backed) -->
+                    <section class="log-card" aria-label="Visitor History">
+                        <div class="log-title">
+                            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+                            <span>Recent Visitor Activity</span>
+                        </div>
+                        <div class="log-list" id="logList">
+                            <div class="log-item-empty">Loading history...</div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Right Column: Checkout Generation Work Area & Results -->
+            <div class="panel-right">
+                <div class="card card-form">
+                    <form id="checkoutForm" novalidate>
+                        <!-- Access Token -->
+                        <div class="field token-field">
+                            <label for="bearerToken">
+                                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                <span>ChatGPT Access Token / Session JSON</span>
+                                <a href="https://chatgpt.com/api/auth/session" target="_blank" rel="noopener noreferrer" class="token-link" id="getTokenLink">Get Token</a>
+                            </label>
+                            <div class="input-wrapper">
+                                <textarea id="bearerToken" name="bearerToken" placeholder="Enter your token or copy the entire JSON from ChatGPT login session..." required autocomplete="off"></textarea>
+                            </div>
+                            <p class="hint-inline">Supports raw token <code>eyJhbGci...</code> or complete JSON session text.</p>
+                        </div>
+
+                        <!-- Checkout Mode -->
+                        <div class="field">
+                            <label for="checkoutMode">
+                                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                                <span>Checkout Mode</span>
+                            </label>
+                            <div class="select-wrapper">
+                                <span class="select-icon-left">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                                </span>
+                                <select id="checkoutMode" name="checkoutMode">
+                                    <option value="hosted">Hosted (Official Stripe)</option>
+                                    <option value="custom" selected>Custom (Embed Page)</option>
+                                </select>
+                                <span class="select-chevron">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Proxy Section (Optional) -->
+                        <details class="proxy-section" id="proxyDetails">
+                            <summary>Proxy Settings (Use if IP is limited by ChatGPT)</summary>
+                            <div class="proxy-content">
+                                <div class="field">
+                                    <label for="proxyUrl">Proxy URL</label>
+                                    <input type="text" id="proxyUrl" name="proxyUrl" placeholder="socks5://127.0.0.1:1080 or http://username:password@host:port">
+                                    <p class="hint">HTTP/HTTPS/SOCKS5 Proxy is used to forward requests to OpenAI servers if the hosting VPS datacenter IP faces limitations (Cloudflare 403).</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Action Button -->
+                        <button type="submit" class="btn-primary" id="btnSubmit">
+                            <span class="btn-text" id="btnText">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+                                <span>Generate Stripe Link</span>
+                            </span>
+                            <span class="btn-loader" id="btnLoader" style="display: none;">
+                                <svg class="spinner" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10" stroke-dasharray="32" stroke-dashoffset="8"/></svg>
+                                <span>Processing Link...</span>
+                            </span>
+                        </button>
+                    </form>
+
+                    <!-- Results Section -->
+                    <section id="resultContainer" aria-label="Link Generation Result" style="display: none;"></section>
+
+                    <!-- Footer note -->
+                    <footer class="footer-note">
+                        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        <p>All checkout processes are handled directly on official OpenAI Stripe. We do not store your sensitive info.</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Script Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Theme toggle logic
+            const themeBtns = document.querySelectorAll('.theme-btn');
+            let activeTheme = localStorage.getItem('theme') || 'system';
+
+            function applyTheme(themeName) {
+                const root = document.documentElement;
+                if (themeName === 'system') {
+                    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                    root.setAttribute('data-theme', isDark ? 'dark' : 'light');
+                } else {
+                    root.setAttribute('data-theme', themeName);
+                }
+
+                // Update active button state
+                themeBtns.forEach(btn => {
+                    const isCurrent = btn.getAttribute('data-theme-val') === themeName;
+                    btn.classList.toggle('active', isCurrent);
+                    btn.setAttribute('aria-checked', isCurrent ? 'true' : 'false');
+                });
+            }
+
+            themeBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const selectedTheme = btn.getAttribute('data-theme-val');
+                    localStorage.setItem('theme', selectedTheme);
+                    activeTheme = selectedTheme;
+                    applyTheme(selectedTheme);
+                });
+            });
+
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                if (activeTheme === 'system') {
+                    applyTheme('system');
+                }
+            });
+
+            // Initialize theme
+            applyTheme(activeTheme);
+
+
+            // 2. Load stats, visitor logs and current visitor details on startup
+            loadStats();
+            loadAndLogVisitor();
+
+            const form = document.getElementById('checkoutForm');
+            const btnSubmit = document.getElementById('btnSubmit');
+            const btnText = document.getElementById('btnText');
+            const btnLoader = document.getElementById('btnLoader');
+            const resultContainer = document.getElementById('resultContainer');
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                let tokenInput = document.getElementById('bearerToken').value.trim();
+                const mode = document.getElementById('checkoutMode').value;
+                const promoCode = 'plus-1-month-free';
+                const proxyUrl = document.getElementById('proxyUrl').value.trim();
+
+                if (!tokenInput) {
+                    alert('Please enter ChatGPT Access Token.');
+                    return;
+                }
+
+                // If input is JSON format, try to parse and extract the accessToken
+                if (tokenInput.startsWith('{')) {
+                    try {
+                        const parsed = JSON.parse(tokenInput);
+                        if (parsed.accessToken) {
+                            tokenInput = parsed.accessToken;
+                        } else if (parsed.access_token) {
+                            tokenInput = parsed.access_token;
+                        }
+                    } catch (err) {
+                        // Keep the raw token input if JSON parsing fails
+                    }
+                }
+
+                // Set UI state loading
+                btnSubmit.disabled = true;
+                btnText.style.display = 'none';
+                btnLoader.style.display = 'inline-flex';
+                resultContainer.style.display = 'none';
+                resultContainer.innerHTML = '';
+
+                try {
+                    // Step 1: Check coupon eligibility first
+                    const couponRes = await fetch('/api/check-coupon', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            bearer_token: tokenInput,
+                            coupon: promoCode,
+                            proxy_url: proxyUrl
+                        })
+                    });
+
+                    const couponData = await couponRes.json();
+                    
+                    if (!couponRes.ok) {
+                        showErrorCard(couponData);
+                        return;
+                    }
+
+                    // Step 2: Generate Stripe checkout session
+                    const checkoutRes = await fetch('/api/checkout', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            bearer_token: tokenInput,
+                            plan_name: 'chatgptplusplan',
+                            mode: mode,
+                            promo_code: promoCode,
+                            country: 'ID',
+                            currency: 'IDR',
+                            proxy_url: proxyUrl
+                        })
+                    });
+
+                    const checkoutData = await checkoutRes.json();
+
+                    if (!checkoutRes.ok) {
+                        showErrorCard(checkoutData);
+                        return;
+                    }
+
+                    // Success! Display results
+                    await showSuccessCard(checkoutData, promoCode, mode);
+                    loadStats(); // reload usage stats
+
+                } catch (err) {
+                    showErrorCard({ error: `Failed to send request: ${err.message}` });
+                } finally {
+                    btnSubmit.disabled = false;
+                    btnText.style.display = 'inline-flex';
+                    btnLoader.style.display = 'none';
+                }
+            });
+
+            // IP masking helper for privacy
+            function maskIp(ip) {
+                if (!ip) return 'Unknown';
+                let cleaned = ip;
+                if (cleaned.startsWith('::ffff:')) {
+                    cleaned = cleaned.substring(7);
+                } else if (cleaned === '::1') {
+                    cleaned = '127.0.0.1';
+                }
+                const parts = cleaned.split('.');
+                if (parts.length === 4) {
+                    return `${parts[0]}.${parts[1]}.xxx.xxx`;
+                }
+                const partsV6 = cleaned.split(':');
+                if (partsV6.length > 2) {
+                    return `${partsV6[0]}:${partsV6[1]}:xxxx:xxxx`;
+                }
+                return cleaned;
+            }
+
+            // Fetch visitor info and log it in the database
+            async function loadAndLogVisitor() {
+                let geoData = {
+                    ip: 'Dynamic IP',
+                    country_name: 'Unknown Country',
+                    country_code: 'N/A',
+                    city: 'Unknown City',
+                    org: 'Unknown ISP'
+                };
+
+                try {
+                    // 1. Fetch current client details from ipapi.co
+                    const res = await fetch('https://ipapi.co/json/');
+                    if (res.ok) {
+                        const data = await res.json();
+                        geoData = data;
+                    }
+                } catch (err) {
+                    console.error('Failed to get client location:', err);
+                }
+
+                // 2. Render details on visitor card
+                document.getElementById('visitorIp').textContent = geoData.ip;
+                document.getElementById('visitorCountry').textContent = geoData.country_name ? `${geoData.country_name} (${geoData.country_code || 'N/A'})` : 'Unknown';
+                document.getElementById('visitorCity').textContent = geoData.city || 'Unknown';
+                document.getElementById('visitorIsp').textContent = geoData.org || 'Unknown';
+
+                // 3. Post to backend to save visitor logs
+                try {
+                    await fetch('/api/log-visitor', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            country: geoData.country_name || 'Unknown',
+                            city: geoData.city || 'Unknown',
+                            region: geoData.region || 'Unknown',
+                            isp: geoData.org || 'Unknown'
+                        })
+                    });
+                } catch (err) {
+                    console.error('Failed to log visitor on backend:', err);
+                }
+
+                // 4. Fetch recent logs list
+                loadVisitorLogs();
+            }
+
+            // Fetch recent visitors list
+            async function loadVisitorLogs() {
+                try {
+                    const res = await fetch('/api/visitors');
+                    if (!res.ok) return;
+                    const list = await res.json();
+
+                    const container = document.getElementById('logList');
+                    if (!list || list.length === 0) {
+                        container.innerHTML = '<div class="log-item-empty">No visitor history yet.</div>';
+                        return;
+                    }
+
+                    container.innerHTML = list.map(item => {
+                        const formattedTime = new Date(item.timestamp).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
+                        const masked = maskIp(item.ip);
+                        
+                        return `
+                            <div class="log-item">
+                                <div class="log-item-left">
+                                    <span class="log-country" title="${item.country}">${item.city || 'Unknown'}, ${item.country || 'N/A'}</span>
+                                    <span class="log-ip">${masked}</span>
+                                </div>
+                                <div class="log-item-right">
+                                    <span class="log-time">${formattedTime}</span>
+                                </div>
+                            </div>
+                        `;
+                    }).join('');
+                } catch (err) {
+                    console.error('Failed to load visitor logs:', err);
+                    document.getElementById('logList').innerHTML = '<div class="log-item-empty">Failed to load history.</div>';
+                }
+            }
+
+            // Fetch server usage statistics
+            async function loadStats() {
+                try {
+                    const res = await fetch('/api/stats');
+                    if (!res.ok) return;
+                    const data = await res.json();
+                    document.getElementById('statTotal').textContent = data.total_generated;
+                    document.getElementById('statLast').textContent = data.last_generated || 'Never';
+                    document.getElementById('statTimeAgo').textContent = data.last_generated_ago || '-';
+                } catch (err) {
+                    console.error('Stats loading failed:', err);
+                }
+            }
+
+            function showErrorCard(data) {
+                resultContainer.style.display = 'block';
+                
+                const isTokenRevoked = data.error_code === 'token_revoked';
+                const isCfBlocked = data.error_code === 'cloudflare_blocked';
+                
+                let errorHtml = `
+                    <div class="result-card error">
+                        <div class="result-head">
+                            <span class="result-dot red"></span>
+                            <span>Generation Failed / Error</span>
+                        </div>
+                        <div class="auth-error">
+                            <p class="error-text">${data.error || 'A system error occurred.'}</p>
+                `;
+
+                if (isTokenRevoked) {
+                    errorHtml += `
+                            <p class="auth-hint">Please log in again in your browser and retrieve a new Token from <a href="https://chatgpt.com/api/auth/session" target="_blank" class="token-link">chatgpt.com/api/auth/session</a>.</p>
+                    `;
+                } else if (isCfBlocked) {
+                    errorHtml += `
+                            <p class="auth-hint">Cloudflare has blocked direct access from your hosting server. Please open the <strong>Proxy Settings</strong> menu above and enter an active HTTP/SOCKS5 proxy to forward requests successfully.</p>
+                    `;
+                }
+
+                errorHtml += `
+                        </div>
+                        ${data.detail ? `
+                        <div class="raw-details">
+                            <details>
+                                <summary>Show Technical Details</summary>
+                                <pre class="raw-json">${JSON.stringify(data.detail, null, 2)}</pre>
+                            </details>
+                        </div>` : ''}
+                    </div>
+                `;
+                resultContainer.innerHTML = errorHtml;
+                resultContainer.scrollIntoView({ behavior: 'smooth' });
+            }
+
+            async function showSuccessCard(data, promoCode, mode) {
+                resultContainer.style.display = 'block';
+
+                let subtotalText = 'Loading...';
+                let totalText = 'Loading...';
+                
+                let cardHtml = `
+                    <div class="result-card success">
+                        <div class="result-head">
+                            <span class="result-dot green"></span>
+                            <span>Stripe Link Created Successfully!</span>
+                        </div>
+                        
+                        <div class="info-grid">
+                            <div class="info-row">
+                                <span>Plan Name:</span>
+                                <span class="badge">ChatGPT Plus</span>
+                            </div>
+                            <div class="info-row">
+                                <span>Promo Campaign:</span>
+                                <code>${promoCode}</code>
+                            </div>
+                            <div class="info-row">
+                                <span>Currency / Region:</span>
+                                <code>IDR / Indonesia</code>
+                            </div>
+                            <div class="info-row">
+                                <span>Checkout Mode:</span>
+                                <span class="badge badge-open">${mode.toUpperCase()}</span>
+                            </div>
+                        </div>
+                `;
+
+                // Add checkout link action card
+                if (data.checkout_url) {
+                    cardHtml += `
+                        <div class="action-card">
+                            <p class="action-label">Official Stripe Checkout Link</p>
+                            <div class="url-box">
+                                <input type="text" value="${data.checkout_url}" id="urlInput" readonly onclick="this.select()">
+                                <button type="button" class="btn-copy" id="btnCopyUrl">Copy Link</button>
+                            </div>
+                            <a href="${data.checkout_url}" target="_blank" rel="noopener noreferrer" class="btn-open">
+                                <span>Open Stripe Link</span>
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                    `;
+                }
+
+                // Stripe session billing breakdown preview for Custom Mode
+                if (mode === 'custom' && data.checkout_session_id && data.publishable_key) {
+                    cardHtml += `
+                        <div class="action-card secondary" id="stripeInfoCard">
+                            <p class="action-label">Stripe Checkout Summary (Custom Preview)</p>
+                            <div class="info-grid">
+                                <div class="info-row">
+                                    <span>Subtotal:</span>
+                                    <span id="stripeSubtotal">${subtotalText}</span>
+                                </div>
+                                <div id="stripeDiscountRow" style="display: none;"></div>
+                                <div class="info-row" style="border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 0.5rem;">
+                                    <strong>Total Cost:</strong>
+                                    <strong id="stripeTotal">${totalText}</strong>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+
+                cardHtml += `
+                    </div>
+                `;
+
+                resultContainer.innerHTML = cardHtml;
+                resultContainer.scrollIntoView({ behavior: 'smooth' });
+
+                // Copy to clipboard functionality
+                const btnCopyUrl = document.getElementById('btnCopyUrl');
+                if (btnCopyUrl) {
+                    btnCopyUrl.addEventListener('click', () => {
+                        const urlInput = document.getElementById('urlInput');
+                        urlInput.select();
+                        navigator.clipboard.writeText(urlInput.value);
+                        btnCopyUrl.textContent = 'Copied!';
+                        btnCopyUrl.style.borderColor = 'var(--success)';
+                        btnCopyUrl.style.color = 'var(--success)';
+                        setTimeout(() => {
+                            btnCopyUrl.textContent = 'Copy Link';
+                            btnCopyUrl.style.borderColor = '';
+                            btnCopyUrl.style.color = '';
+                        }, 2000);
+                    });
+                }
+
+                // Fetch Stripe preview data
+                if (mode === 'custom' && data.checkout_session_id && data.publishable_key) {
+                    try {
+                        const stripeRes = await fetch('/api/stripe-init', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({
+                                checkout_session_id: data.checkout_session_id,
+                                publishable_key: data.publishable_key
+                            })
+                        });
+
+                        const stripeData = await stripeRes.ok ? await stripeRes.json() : null;
+
+                        if (stripeData && stripeData.total_summary) {
+                            const formatPrice = (amount) => {
+                                if (stripeData.invoice && stripeData.invoice.currency === 'idr') {
+                                    return 'Rp ' + amount.toLocaleString('en-US');
+                                }
+                                return '$' + (amount / 100).toFixed(2);
+                            };
+
+                            document.getElementById('stripeSubtotal').textContent = formatPrice(stripeData.total_summary.subtotal);
+                            document.getElementById('stripeTotal').textContent = formatPrice(stripeData.total_summary.total);
+
+                            // Handle discounts formatting
+                            if (stripeData.invoice && stripeData.invoice.total_discount_amounts && stripeData.invoice.total_discount_amounts.length > 0) {
+                                const discountRow = document.getElementById('stripeDiscountRow');
+                                discountRow.style.display = 'flex';
+                                discountRow.className = 'info-row';
+                                
+                                const disc = stripeData.invoice.total_discount_amounts[0];
+                                let couponLabel = 'Coupon Discount';
+                                if (disc.coupon) {
+                                    couponLabel = `Discount (${disc.coupon.name || 'Coupon'}):`;
+                                }
+                                discountRow.innerHTML = `
+                                    <span>${couponLabel}</span>
+                                    <span style="color: var(--success);">- ${disc.coupon && disc.coupon.percent_off ? disc.coupon.percent_off + '%' : '100%'}</span>
+                                `;
+                            }
+                        } else {
+                            document.getElementById('stripeSubtotal').textContent = 'Failed to load price';
+                            document.getElementById('stripeTotal').textContent = 'Failed to load price';
+                        }
+                    } catch (err) {
+                        console.error('Failed to get Stripe details:', err);
+                        document.getElementById('stripeSubtotal').textContent = 'Error';
+                        document.getElementById('stripeTotal').textContent = 'Error';
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
